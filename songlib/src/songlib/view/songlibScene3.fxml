@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<GridPane 
+	xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="songlib.view.EditController"
+	vgap="10" hgap="10">
+	
+    <Text text="song name" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <TextField fx:id="song_name_edit" prefHeight="40" GridPane.columnIndex="1" GridPane.rowIndex="1" onAction="#edit_scene"/>
+               
+    <Text text="artist" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <TextField fx:id="artist_edit" prefHeight="40" GridPane.columnIndex="1" GridPane.rowIndex="2" onAction="#edit_scene"/>
+    
+    <Text text="album" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+    <TextField fx:id="album_edit" prefHeight="40" GridPane.columnIndex="1" GridPane.rowIndex="3" onAction="#edit_scene"/>
+    
+    <Text text="year" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+    <TextField fx:id="year_edit" prefHeight="40" GridPane.columnIndex="1" GridPane.rowIndex="4" onAction="#edit_scene"/>
+    
+    <Button fx:id="finish_change" Text="Show item data" GridPane.columnIndex="1" GridPane.rowIndex="5" onAction="#edit_scene"/>
+    <Button fx:id="Cancel2" Text="Cancel" GridPane.columnIndex="0" GridPane.rowIndex="5" onAction="#edit_scene"/>
+    <Button fx:id="Finish2" Text="Finish" GridPane.columnIndex="0" GridPane.rowIndex="6" onAction="#edit_scene"/>
+    
+    <padding>
+		<Insets top="10" right="10" bottom="10" left="10"/>
+	</padding>
+	
+    
+    
+</GridPane>

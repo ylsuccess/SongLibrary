@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.event.ActionEvent?>
+<AnchorPane 
+	xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="songlib.view.SongController">
+	
+	
+	<ListView fx:id="listView" 
+		AnchorPane.topAnchor = "65"
+		AnchorPane.leftAnchor = "10" 
+		AnchorPane.rightAnchor = "10"
+		AnchorPane.bottomAnchor = "50"
+		/>
+
+	<TextArea fx:id="textArea"
+	style="-fx-control-inner-background:#000000; -fx-font-family: Consolas; -fx-highlight-fill: #00ff00; 
+	-fx-highlight-text-fill: #000000; -fx-text-fill: #00ff00; -fx-font-size: 10px; "
+	id="textArea" editable="false"  layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="180.0" text="Detail of selected song:" 
+	focusTraversable="true" wrapText="true"
+	/>
+	
+	<Button fx:id="Add" Text="Add" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0"/>
+	<Button fx:id="Delete" Text="Delete" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="75.0"/>
+	<Button fx:id="Edit" Text="Edit" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="15.0"/>
+
+</AnchorPane>
+		
